@@ -1,5 +1,5 @@
 import { light, dark } from "../theme";
-
+import ResumeDropdown from "./ResumeDropdown";
 const navItems = ["about", "skills", "projects", "experience", "certifications", "achievements", "contact"];
 
 export default function Navbar({ darkMode, setDarkMode, active, scrollTo }) {
@@ -76,6 +76,7 @@ export default function Navbar({ darkMode, setDarkMode, active, scrollTo }) {
             )}
           </button>
         ))}
+        <ResumeDropdown darkMode={darkMode} variant="nav" />
       </div>
     </nav>
   );

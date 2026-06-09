@@ -3,7 +3,7 @@ import {
   GITHUB, LINKEDIN, EMAIL, INSTAGRAM
 } from "../data/links";
 import profilePhoto from "../assets/profile.png";
-
+import ResumeDropdown from "./ResumeDropdown";
 export default function Hero({ darkMode, registerSection, fadeIn }) {
   const t = darkMode ? dark : light;
 
@@ -170,6 +170,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
               </svg>
               Instagram
             </a>
+            <ResumeDropdown darkMode={darkMode} variant="hero" />
           </div>
         </div>
 

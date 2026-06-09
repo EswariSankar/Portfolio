@@ -1,5 +1,6 @@
 import { light, dark } from "../theme";
 import { EMAIL, PHONE, GITHUB, LINKEDIN } from "../data/links";
+import ResumeDropdown from "./ResumeDropdown";
 
 export default function Contact({ darkMode, registerSection, fadeIn }) {
   const t = darkMode ? dark : light;
@@ -172,6 +173,7 @@ export default function Contact({ darkMode, registerSection, fadeIn }) {
             </a>
           ))}
         </div>
+        <ResumeDropdown darkMode={darkMode} variant="contact" />
       </div>
     </section>
   );
