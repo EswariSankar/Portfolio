@@ -59,7 +59,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
             letterSpacing: "-1px",
             color: t.text,
           }}>
-            Mobile & FullStack Developer<br />
+            FullStack Developer<br />
 
           </h1>
 
@@ -148,7 +148,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
               </svg>
               Email
             </a>
-            
+
             <ResumeDropdown darkMode={darkMode} variant="hero" />
           </div>
         </div>
@@ -192,10 +192,11 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                 gap: 16,
               }}>
                 <div style={{
-                  padding: 4,
+                  padding: 5,
                   borderRadius: "50%",
-                  background: `linear-gradient(135deg, ${t.accent}, #3B82F6)`,
+                  background: `linear-gradient(135deg, ${t.accent}, #a855f7)`,
                   flexShrink: 0,
+                  boxShadow: `0 0 24px ${t.accent}55`,
                 }}>
                   <img
                     src={profilePhoto}
@@ -208,7 +209,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                       objectPosition: "center 5%",
                       backgroundColor: "transparent",
                       display: "block",
-                      border: `4px solid ${t.accent}`,
+                      border: `4px solid #fff`,
                     }}
                   />
                 </div>

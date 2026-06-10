@@ -66,7 +66,7 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
       background: t.accent,
       color: "#fff",
       border: `1.5px solid ${t.accent}`,
-      fontSize: 24,
+      fontSize: 20,
       fontWeight: 400,
       padding: "6px 14px",
       borderRadius: 8,
