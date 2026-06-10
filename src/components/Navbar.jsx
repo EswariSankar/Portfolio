@@ -29,7 +29,7 @@ export default function Navbar({ darkMode, setDarkMode, active, scrollTo }) {
       height: 60,
     }}>
       <div style={{
-        fontFamily: "'DM Serif Display', serif",
+        fontFamily: "'Times New Roman' ",
         fontSize: 30,
         letterSpacing: "-0.5px",
         color: '#000000',
@@ -52,8 +52,9 @@ export default function Navbar({ darkMode, setDarkMode, active, scrollTo }) {
               background: "none",
               border: "none",
               cursor: "pointer",
-              fontSize: 15,
-              color: active === n ? t.accent : t.textSecondary,
+              fontFamily: "'Times New Roman' ",
+              fontSize: 24,
+              color: active === n ?' #000000' : t.textSecondary,
               fontWeight: active === n ? 600 : 400,
               transition: "color 0.2s",
               padding: "4px 0",
@@ -70,7 +71,7 @@ export default function Navbar({ darkMode, setDarkMode, active, scrollTo }) {
                 left: 0,
                 right: 0,
                 height: 2,
-                background: t.accent,
+                background: '#000000',
                 borderRadius: 2,
               }} />
             )}

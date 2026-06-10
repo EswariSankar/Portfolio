@@ -50,7 +50,7 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                   right: 12,
                   background: t.accent,
                   color: "#fff",
-                  fontSize: 10,
+                  fontSize:18,
                   padding: "3px 10px",
                   borderRadius: 20,
                   fontWeight: 600,
@@ -59,19 +59,20 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                 </div>
               )}
               <h3 style={{
-                fontSize: 17,
+                fontSize: 24,
                 lineHeight: 1.3,
                 marginBottom: 10,
                 color: t.text,
-                fontFamily: "'DM Serif Display', serif",
+                fontFamily: "'Times New Roman', ",
               }}>
                 {p.title}
               </h3>
               <p style={{
-                fontSize: 13,
+                fontSize: 18,
                 color: t.textSecondary,
                 lineHeight: 1.7,
                 flex: 1,
+                textAlign: "justify",
                 margin: 0,
               }}>
                 {p.desc}
@@ -86,7 +87,7 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                   <span
                     key={tag}
                     style={{
-                      fontSize: 11,
+                      fontSize: 16,
                       padding: "3px 10px",
                       borderRadius: 20,
                       background: t.accentLight,
@@ -103,7 +104,7 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                 target="_blank"
                 rel="noreferrer"
                 style={{
-                  fontSize: 13,
+                  fontSize: 18,
                   color: t.accent,
                   textDecoration: "none",
                   fontWeight: 500,

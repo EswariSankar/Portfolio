@@ -88,7 +88,7 @@ export default function Experience({ darkMode, registerSection, visible, fadeIn 
                             </div>
                             <div>
                                 <div style={{
-                                    fontSize: 15,
+                                    fontSize: 24,
                                     fontWeight: 600,
                                     color: t.text,
                                     marginBottom: 4,
@@ -96,7 +96,7 @@ export default function Experience({ darkMode, registerSection, visible, fadeIn 
                                     {e.title}
                                 </div>
                                 <div style={{
-                                    fontSize: 12,
+                                    fontSize: 20,
                                     color: t.accentText,
                                     background: t.accentLight,
                                     display: "inline-block",
@@ -108,10 +108,11 @@ export default function Experience({ darkMode, registerSection, visible, fadeIn 
                                     {e.org}
                                 </div>
                                 <p style={{
-                                    fontSize: 13,
+                                    fontSize: 18,
                                     color: t.textSecondary,
                                     lineHeight: 1.75,
                                     margin: 0,
+                                    textAlign: "justify",
                                 }}>
                                     {e.desc}
                                 </p>

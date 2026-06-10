@@ -18,7 +18,7 @@ export default function Portfolio() {
     <div style={{
       background: t.bg,
       color: t.text,
-      fontFamily: "'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      fontFamily: "Times New Roman",
       minHeight: "100vh",
       transition: "background 0.3s, color 0.3s",
     }}>

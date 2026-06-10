@@ -120,8 +120,8 @@ export default function Certifications({ darkMode, registerSection, visible, fad
               </div>
               <div>
                 <div style={{
-                  fontSize: 14,
-                  fontWeight: 500,
+                  fontSize: 26,
+                  fontWeight: 600,
                   color: t.text,
                   marginBottom: 4,
                   lineHeight: 1.4,
@@ -129,7 +129,7 @@ export default function Certifications({ darkMode, registerSection, visible, fad
                   {c.title}
                 </div>
                 <div style={{
-                  fontSize: 12,
+                  fontSize: 20,
                   color: t.textSecondary,
                 }}>
                   {c.org}

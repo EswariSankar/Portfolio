@@ -14,13 +14,13 @@ export default function Footer({ darkMode }) {
       background: t.bg,
     }}>
       <div style={{
-        fontFamily: "'DM Serif Display', serif",
-        fontSize: 20,
+        fontFamily: "'Times New Roman', ",
+        fontSize: 24,
         color: '#000000',
       }}>
       Eswari&nbsp;&nbsp;S
       </div>
-      <div style={{ fontSize: 13, color: t.muted }}>
+      <div style={{ fontSize: 16, color: t.muted }}>
         © 2026 Eswari S · B.E. IT, Annamalai University
       </div>
       <div style={{ display: "flex", gap: 16 }}>
@@ -29,7 +29,7 @@ export default function Footer({ darkMode }) {
           target="_blank"
           rel="noreferrer"
           style={{
-            fontSize: 13,
+            fontSize: 18,
             color: t.accent,
             textDecoration: "none",
             transition: "opacity 0.2s",
@@ -42,7 +42,7 @@ export default function Footer({ darkMode }) {
           target="_blank"
           rel="noreferrer"
           style={{
-            fontSize: 13,
+            fontSize: 18,
             color: "#0A66C2",
             textDecoration: "none",
             transition: "opacity 0.2s",

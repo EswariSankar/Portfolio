@@ -35,17 +35,6 @@ export default function Contact({ darkMode, registerSection, fadeIn }) {
       ),
     },
     {
-      label: "Instagram",
-      href: "https://www.instagram.com/eswarisankar9/",
-      icon: (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-          <circle cx="12" cy="12" r="4" />
-          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-        </svg>
-      ),
-    },
-    {
       label: "Phone",
       href: `tel:+91${PHONE}`,
       icon: (
@@ -82,7 +71,7 @@ export default function Contact({ darkMode, registerSection, fadeIn }) {
 
         {/* Big headline */}
         <h2 style={{
-          fontFamily: "'DM Serif Display', serif",
+          fontFamily: "'Times New Roman',",
           fontSize: "clamp(48px, 8vw, 80px)",
           lineHeight: 1.1,
           color: t.text,
@@ -94,7 +83,7 @@ export default function Contact({ darkMode, registerSection, fadeIn }) {
 
         {/* Subtext */}
         <p style={{
-          fontSize: 16,
+          fontSize: 23,
           color: t.textSecondary,
           lineHeight: 1.75,
           marginBottom: 44,
@@ -115,7 +104,7 @@ export default function Contact({ darkMode, registerSection, fadeIn }) {
             gap: 10,
             background: t.accent,
             color: "#fff",
-            fontSize: 16,
+            fontSize: 20,
             fontWeight: 600,
             padding: "16px 40px",
             borderRadius: 14,
@@ -135,45 +124,53 @@ export default function Contact({ darkMode, registerSection, fadeIn }) {
         {/* Social icon row */}
         <div style={{
           display: "flex",
-          justifyContent: "center",
-          gap: 14,
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 20,
+          marginTop: 8,
         }}>
-          {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={s.label}
-              style={{
-                width: 52,
-                height: 52,
-                borderRadius: 14,
-                background: t.card,
-                border: `1px solid ${t.border}`,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: t.text,
-                textDecoration: "none",
-                fontSize: 15,
-                fontWeight: 600,
-                transition: "border-color 0.2s, background 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = t.accent;
-                e.currentTarget.style.color = t.accent;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = t.border;
-                e.currentTarget.style.color = t.text;
-              }}
-            >
-              {s.icon}
-            </a>
-          ))}
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 14,
+          }}>
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={s.label}
+                style={{
+                  width: 52,
+                  height: 52,
+                  borderRadius: 14,
+                  background: t.card,
+                  border: `1px solid ${t.border}`,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: t.text,
+                  textDecoration: "none",
+                  fontSize: 18,
+                  fontWeight: 600,
+                  transition: "border-color 0.2s, background 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = t.accent;
+                  e.currentTarget.style.color = t.accent;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = t.border;
+                  e.currentTarget.style.color = t.text;
+                }}
+              >
+                {s.icon}
+              </a>
+            ))}
+          </div>
+          <ResumeDropdown darkMode={darkMode} variant="contact" />
         </div>
-        <ResumeDropdown darkMode={darkMode} variant="contact" />
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
         </svg>
       ),
       title: "Backend",
-      tags: "Python, Django, REST APIs, SQLite",
+      tags: "Python, Django, \nREST APIs, SQLite",
     },
     {
       icon: (
@@ -66,7 +66,7 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
         </svg>
       ),
       title: "AI & Vision",
-      tags: "MediaPipe, OpenCV, Image Processing",
+      tags: "MediaPipe, OpenCV, \nImage Processing",
     },
     {
       icon: (
@@ -96,7 +96,7 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
         </svg>
       ),
       title: "Blockchain",
-      tags: "Smart Contracts, Web3 basics",
+      tags: "Smart Contracts,\nWeb3 basics",
     },
   ];
 
@@ -171,7 +171,7 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
                 {s.icon}
               </div>
               <div style={{
-                fontSize: 15,
+                fontSize: 26,
                 fontWeight: 600,
                 color: t.text,
                 marginBottom: 8,
@@ -179,9 +179,10 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
                 {s.title}
               </div>
               <div style={{
-                fontSize: 12,
+                fontSize: 20,
                 color: t.textSecondary,
                 lineHeight: 1.6,
+                 whiteSpace: "pre-line",
               }}>
                 {s.tags}
               </div>

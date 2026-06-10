@@ -1,6 +1,6 @@
 import { light, dark } from "../theme";
 import {
-  GITHUB, LINKEDIN, EMAIL, INSTAGRAM
+  GITHUB, LINKEDIN, EMAIL
 } from "../data/links";
 import profilePhoto from "../assets/profile.png";
 import ResumeDropdown from "./ResumeDropdown";
@@ -22,10 +22,11 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
     >
       <div style={{
         display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: 64,
+        gridTemplateColumns: "1.2fr 0.8fr",
+        gap: 40,
         alignItems: "center",
         width: "100%",
+        justifyContent: "flex-end",
       }}>
         <div style={fadeIn("about", 0)}>
           <div style={{
@@ -34,7 +35,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
             gap: 8,
             background: t.accentLight,
             color: t.accentText,
-            fontSize: 15,
+            fontSize: 26,
             padding: "8px 20px",
             borderRadius: 20,
             marginBottom: 24,
@@ -51,7 +52,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
           </div>
 
           <h1 style={{
-            fontFamily: "'DM Serif Display', serif",
+            fontFamily: "'Times New Roman', serif",
             fontSize: 52,
             lineHeight: 1.1,
             margin: "0 0 16px",
@@ -63,11 +64,12 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
           </h1>
 
           <p style={{
-            fontSize: 17,
+            fontSize: 24,
             color: t.textSecondary,
             lineHeight: 1.75,
             marginBottom: 32,
-            maxWidth: 440,
+            textAlign: "justify",
+            maxWidth: 520,
           }}>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I am Eswari S, a Software Developer with a Bachelor's degree in Information Technology and a strong passion for building
             innovative web and mobile applications and  specialize in developing web applications using Django and cross-platform mobile applications
@@ -78,8 +80,9 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
           <div style={{
             display: "flex",
             gap: 12,
-            flexWrap: "wrap",
+            flexWrap: "nowrap",
             marginBottom: 40,
+            alignItems: "center",
           }}>
             <a
               href={GITHUB}
@@ -93,7 +96,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                 color: "#fff",
                 padding: "10px 22px",
                 borderRadius: 10,
-                fontSize: 14,
+                fontSize: 18,
                 textDecoration: "none",
                 fontWeight: 500,
                 transition: "opacity 0.2s",
@@ -114,7 +117,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                 color: "#fff",
                 padding: "10px 22px",
                 borderRadius: 10,
-                fontSize: 14,
+                fontSize: 18,
                 textDecoration: "none",
                 fontWeight: 500,
                 transition: "opacity 0.2s",
@@ -133,7 +136,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                 color: "#fff",
                 padding: "10px 22px",
                 borderRadius: 10,
-                fontSize: 14,
+                fontSize: 18,
                 textDecoration: "none",
                 fontWeight: 500,
                 transition: "opacity 0.2s",
@@ -145,31 +148,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
               </svg>
               Email
             </a>
-            <a
-              href={INSTAGRAM}
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 8,
-                background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
-                color: "#fff",
-                padding: "10px 22px",
-                borderRadius: 10,
-                fontSize: 14,
-                textDecoration: "none",
-                fontWeight: 500,
-                transition: "opacity 0.2s",
-              }}
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                <circle cx="12" cy="12" r="4" />
-                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-              </svg>
-              Instagram
-            </a>
+            
             <ResumeDropdown darkMode={darkMode} variant="hero" />
           </div>
         </div>
@@ -178,7 +157,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
         <div style={{
           ...fadeIn("about", 0.2),
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-end",
         }}>
           <div style={{ position: "relative", width: 320, height: 460 }}>
             <div style={{
@@ -235,21 +214,21 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                 </div>
                 <div style={{ textAlign: "center" }}>
                   <div style={{
-                    fontFamily: "'DM Serif Display', serif",
-                    fontSize: 22,
+                    fontFamily: "'Times New Roman',",
+                    fontSize: 24,
                     color: t.text,
                   }}>
                     Eswari S
                   </div>
                   <div style={{
-                    fontSize: 13,
+                    fontSize: 16,
                     color: t.textSecondary,
                     marginTop: 4,
                   }}>
                     B.E. Information Technology
                   </div>
                   <div style={{
-                    fontSize: 12,
+                    fontSize: 16,
                     color: t.accentText,
                     marginTop: 4,
                   }}>
@@ -265,7 +244,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
               background: t.accent,
               borderRadius: 12,
               padding: "8px 14px",
-              fontSize: 12,
+              fontSize: 16,
               color: "#fff",
               fontWeight: 500,
               whiteSpace: "nowrap",

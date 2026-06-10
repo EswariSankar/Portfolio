@@ -13,8 +13,8 @@ export default function SectionHeader({ title, darkMode, visible = true, accent,
       marginBottom: 8,
     }}>
       <h2 style={{
-        fontFamily: "'DM Serif Display', serif",
-        fontSize: 32,
+        fontFamily: "'Times New Roman', ",
+        fontSize: 38,
         letterSpacing: "-0.5px",
         color: t.text,
         margin: 0,

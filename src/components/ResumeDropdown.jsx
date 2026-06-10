@@ -21,7 +21,7 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
   const options = [
     {
       label: "One-Page CV",
-      sub: "Quick overview · 1 page",
+      sub: "Quick overview of my skills, internships, projects, and certifications.",
       file: "/resume/one-page-cv.pdf",
       icon: (
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -35,7 +35,7 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
     },
     {
       label: "Detailed Resume",
-      sub: "Full projects & certs · 2–3 pages",
+      sub: "Comprehensive overview of my education, internships, projects, skills, and certifications.",
       file: "/resume/detailed-resume.pdf",
       icon: (
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -56,37 +56,37 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
       alignItems: "center",
       gap: 8,
       cursor: "pointer",
-      fontFamily: "inherit",
+      fontFamily: "'Times New Roman', ",
       transition: "opacity 0.2s",
       whiteSpace: "nowrap",
       outline: "none",
     };
     if (variant === "nav") return {
       ...base,
-      background: "transparent",
-      color: t.accent,
+      background: t.accent,
+      color: "#fff",
       border: `1.5px solid ${t.accent}`,
-      fontSize: 13,
-      fontWeight: 600,
+      fontSize: 24,
+      fontWeight: 400,
       padding: "6px 14px",
       borderRadius: 8,
     };
     if (variant === "contact") return {
       ...base,
-      background: "transparent",
-      color: t.accent,
+      background: t.accent,
+      color: "#fff",
       border: `2px solid ${t.accent}`,
-      fontSize: 16,
+      fontSize: 20,
       fontWeight: 600,
       padding: "14px 36px",
       borderRadius: 14,
     };
     return {
       ...base,
-      background: t.card,
-      color: t.text,
-      border: `1px solid ${t.border}`,
-      fontSize: 14,
+      background: t.accent,
+      color: "#fff",
+      border: `1px solid ${t.accent}`,
+      fontSize: 18,
       fontWeight: 500,
       padding: "10px 22px",
       borderRadius: 10,
@@ -100,8 +100,8 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
       <button
         onClick={() => setOpen((o) => !o)}
         style={triggerStyle}
-        onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.82")}
-        onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+        onMouseEnter={(e) => (e.currentTarget.style.filter = "brightness(0.88)")}
+        onMouseLeave={(e) => (e.currentTarget.style.filter = "brightness(1)")}
       >
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -169,8 +169,8 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
                 {opt.icon}
               </div>
               <div>
-                <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 2 }}>{opt.label}</div>
-                <div style={{ fontSize: 11, color: t.muted }}>{opt.sub}</div>
+                <div style={{ fontSize: 16, fontWeight: 600, marginBottom: 2 }}>{opt.label}</div>
+                <div style={{ fontSize: 14, color: t.muted }}>{opt.sub}</div>
               </div>
             </a>
           ))}

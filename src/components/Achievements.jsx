@@ -54,14 +54,14 @@ export default function Achievements({ darkMode, registerSection, visible, fadeI
               }} />
               <div style={{ flex: 1 }}>
                 <span style={{
-                  fontSize: 14,
-                  fontWeight: 500,
+                  fontSize: 26,
+                  fontWeight: 600,
                   color: t.text,
                 }}>
                   {l.role}
                 </span>
                 <span style={{
-                  fontSize: 13,
+                  fontSize: 20,
                   color: t.textSecondary,
                   marginLeft: 12,
                 }}>
@@ -69,7 +69,7 @@ export default function Achievements({ darkMode, registerSection, visible, fadeI
                 </span>
               </div>
               <div style={{
-                fontSize: 12,
+                fontSize: 17,
                 color: t.accentText,
                 background: t.accentLight,
                 padding: "3px 10px",
