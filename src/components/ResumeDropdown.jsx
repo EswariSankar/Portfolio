@@ -128,11 +128,11 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
               background: "rgba(0,0,0,0.25)",
             }}
           />
-          <div style={{
+          <div className={variant === "nav" ? "resume-dd-nav" : ""} style={{
             position: "absolute",
             [dropUp ? "bottom" : "top"]: "calc(100% + 8px)",
-            left: variant === "nav" ? 0 : 0,
-            right: "auto",
+            left: variant === "nav" ? "auto" : 0,
+            right: variant === "nav" ? 0 : "auto",
             minWidth: 230,
             maxWidth: "min(280px, calc(100vw - 40px))",
             width: "max-content",
@@ -150,6 +150,9 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
             @keyframes rdFadeSlide {
               from { opacity:0; transform:translateY(${dropUp ? "6px" : "-6px"}); }
               to   { opacity:1; transform:translateY(0); }
+            }
+            @media (max-width: 768px) {
+              .resume-dd-nav { left: 0 !important; right: auto !important; }
             }
           `}</style>
           <div style={{
