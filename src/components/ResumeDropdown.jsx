@@ -121,9 +121,11 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
         <div style={{
           position: "absolute",
           [dropUp ? "bottom" : "top"]: "calc(100% + 8px)",
-          left: variant === "nav" ? "auto" : 0,
-          right: variant === "nav" ? 0 : "auto",
+          left: variant === "nav" ? 0 : 0,
+          right: "auto",
           minWidth: 230,
+          maxWidth: "min(280px, calc(100vw - 40px))",
+          width: "max-content",
           background: t.card,
           border: `1px solid ${t.border}`,
           borderRadius: 12,
@@ -168,9 +170,9 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
               }}>
                 {opt.icon}
               </div>
-              <div>
+              <div style={{ minWidth: 0 }}>
                 <div style={{ fontSize: 16, fontWeight: 600, marginBottom: 2 }}>{opt.label}</div>
-                <div style={{ fontSize: 14, color: t.muted }}>{opt.sub}</div>
+                <div style={{ fontSize: 14, color: t.muted, whiteSpace: "normal" }}>{opt.sub}</div>
               </div>
             </a>
           ))}

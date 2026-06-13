@@ -1,40 +1,36 @@
 import { light, dark } from "../theme";
 import SectionHeader from "./SectionHeader";
+
 export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
   const t = darkMode ? dark : light;
+
   const skillCategories = [
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={t.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="5" y="2" width="14" height="20" rx="2" />
-          <line x1="9" y1="7" x2="15" y2="7" />
-          <line x1="9" y1="11" x2="15" y2="11" />
-          <line x1="9" y1="15" x2="12" y2="15" />
-          <circle cx="12" cy="18.5" r="0.5" fill={t.accent} />
+          <line x1="9" y1="7" x2="15" y2="7" /><line x1="9" y1="11" x2="15" y2="11" />
+          <line x1="9" y1="15" x2="12" y2="15" /><circle cx="12" cy="18.5" r="0.5" fill={t.accent} />
         </svg>
       ),
-      title: "Mobile Application Development",
+      title: "Mobile Development",
       tags: "React Native, Android, Expo",
     },
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={t.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="2" width="20" height="8" rx="2" />
-          <rect x="2" y="14" width="20" height="8" rx="2" />
-          <line x1="6" y1="6" x2="6.01" y2="6" />
-          <line x1="6" y1="18" x2="6.01" y2="18" />
-          <line x1="10" y1="6" x2="16" y2="6" />
-          <line x1="10" y1="18" x2="16" y2="18" />
+          <rect x="2" y="2" width="20" height="8" rx="2" /><rect x="2" y="14" width="20" height="8" rx="2" />
+          <line x1="6" y1="6" x2="6.01" y2="6" /><line x1="6" y1="18" x2="6.01" y2="18" />
+          <line x1="10" y1="6" x2="16" y2="6" /><line x1="10" y1="18" x2="16" y2="18" />
         </svg>
       ),
       title: "Backend",
-      tags: "Python, Django, \nREST APIs, SQLite",
+      tags: "Python, Django, REST APIs, SQLite",
     },
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={t.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="16 18 22 12 16 6" />
-          <polyline points="8 6 2 12 8 18" />
+          <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
         </svg>
       ),
       title: "Frontend",
@@ -54,26 +50,20 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={t.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="4" cy="6" r="2" />
-          <circle cx="4" cy="18" r="2" />
-          <circle cx="12" cy="12" r="2" />
-          <circle cx="20" cy="6" r="2" />
-          <circle cx="20" cy="18" r="2" />
-          <line x1="6" y1="6" x2="10" y2="12" />
-          <line x1="6" y1="18" x2="10" y2="12" />
-          <line x1="14" y1="12" x2="18" y2="6" />
-          <line x1="14" y1="12" x2="18" y2="18" />
+          <circle cx="4" cy="6" r="2" /><circle cx="4" cy="18" r="2" />
+          <circle cx="12" cy="12" r="2" /><circle cx="20" cy="6" r="2" /><circle cx="20" cy="18" r="2" />
+          <line x1="6" y1="6" x2="10" y2="12" /><line x1="6" y1="18" x2="10" y2="12" />
+          <line x1="14" y1="12" x2="18" y2="6" /><line x1="14" y1="12" x2="18" y2="18" />
         </svg>
       ),
       title: "AI & Vision",
-      tags: "MediaPipe, OpenCV, \nImage Processing",
+      tags: "MediaPipe, OpenCV, Image Processing",
     },
     {
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={t.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2L2 7l10 5 10-5-10-5z" />
-          <path d="M2 17l10 5 10-5" />
-          <path d="M2 12l10 5 10-5" />
+          <path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
         </svg>
       ),
       title: "IoT & Hardware",
@@ -96,100 +86,67 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
         </svg>
       ),
       title: "Blockchain",
-      tags: "Smart Contracts,\nWeb3 basics",
+      tags: "Smart Contracts, Web3 basics",
     },
   ];
 
-
-
   return (
-    <section
-      id="skills"
-      ref={registerSection("skills")}
-      style={{
-        padding: "80px 32px",
-        background: t.surface,
-        borderTop: `1px solid ${t.border}`,
-        borderBottom: `1px solid ${t.border}`,
-      }}
-    >
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div style={{
-          fontSize: 11,
-          fontWeight: 600,
-          letterSpacing: "2px",
-          textTransform: "uppercase",
-          color: t.accentText,
-          marginBottom: 12,
-        }}>
+    <>
+      <style>{`
+        .skills-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px;
+        }
+        @media (max-width: 900px) {
+          .skills-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 480px) {
+          .skills-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+        }
+      `}</style>
+
+      <section
+        id="skills"
+        ref={registerSection("skills")}
+        style={{
+          padding: "60px 20px",
+          background: t.surface,
+          borderTop: `1px solid ${t.border}`,
+          borderBottom: `1px solid ${t.border}`,
+        }}
+      >
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <SectionHeader title="Technical Skills" darkMode={darkMode} visible={visible.skills} accent={t.accent} hideLine />
+
+          <div className="skills-grid" style={{ marginTop: 32 }}>
+            {skillCategories.map((s, i) => (
+              <div
+                key={s.title}
+                style={{
+                  ...fadeIn("skills", i * 0.07),
+                  background: t.card,
+                  border: `1px solid ${t.border}`,
+                  borderRadius: 14,
+                  padding: "16px 14px",
+                  boxShadow: t.shadow,
+                }}
+              >
+                <div style={{
+                  width: 48, height: 48, borderRadius: 12,
+                  background: t.accentLight,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  marginBottom: 12,
+                }}>
+                  {s.icon}
+                </div>
+                <div style={{ fontSize: 15, fontWeight: 600, color: t.text, marginBottom: 6 }}>{s.title}</div>
+                <div style={{ fontSize: 13, color: t.textSecondary, lineHeight: 1.6 }}>{s.tags}</div>
+              </div>
+            ))}
+          </div>
         </div>
-
-        <SectionHeader
-          title="Technical Skills"
-          darkMode={darkMode}
-          visible={visible.skills}
-          accent={t.accent}
-          hideLine
-        />
-
-        <p style={{
-          fontSize: 15,
-          color: t.textSecondary,
-          marginBottom: 40,
-          marginTop: 8,
-        }}>
-        </p>
-
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          gap: 16,
-        }}>
-          {skillCategories.map((s, i) => (
-            <div
-              key={s.title}
-              style={{
-                ...fadeIn("skills", i * 0.07),
-                background: t.card,
-                border: `1px solid ${t.border}`,
-                borderRadius: 14,
-                padding: "20px 18px",
-                transition: "border-color 0.2s, box-shadow 0.2s",
-                boxShadow: t.shadow,
-              }}
-            >
-              <div style={{
-                width: 52,
-                height: 52,
-                borderRadius: 14,
-                background: t.accentLight,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginBottom: 14,
-              }}>
-                {s.icon}
-              </div>
-              <div style={{
-                fontSize: 26,
-                fontWeight: 600,
-                color: t.text,
-                marginBottom: 8,
-              }}>
-                {s.title}
-              </div>
-              <div style={{
-                fontSize: 20,
-                color: t.textSecondary,
-                lineHeight: 1.6,
-                 whiteSpace: "pre-line",
-              }}>
-                {s.tags}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
