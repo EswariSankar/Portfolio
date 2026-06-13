@@ -93,7 +93,7 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
     };
   })();
 
-  const dropUp = variant === "contact";
+  const dropUp = variant === "contact" || variant === "hero";
 
   return (
     <div ref={ref} style={{ position: "relative", display: "inline-block" }}>
@@ -118,22 +118,34 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
       </button>
 
       {open && (
-        <div style={{
-          position: "absolute",
-          [dropUp ? "bottom" : "top"]: "calc(100% + 8px)",
-          left: variant === "nav" ? 0 : 0,
-          right: "auto",
-          minWidth: 230,
-          maxWidth: "min(280px, calc(100vw - 40px))",
-          width: "max-content",
-          background: t.card,
-          border: `1px solid ${t.border}`,
-          borderRadius: 12,
-          boxShadow: t.shadowLg,
-          overflow: "hidden",
-          zIndex: 300,
-          animation: "rdFadeSlide 0.15s ease",
-        }}>
+        <>
+          <div
+            onClick={() => setOpen(false)}
+            style={{
+              position: "fixed",
+              inset: 0,
+              zIndex: 998,
+              background: "rgba(0,0,0,0.25)",
+            }}
+          />
+          <div style={{
+            position: "absolute",
+            [dropUp ? "bottom" : "top"]: "calc(100% + 8px)",
+            left: variant === "nav" ? 0 : 0,
+            right: "auto",
+            minWidth: 230,
+            maxWidth: "min(280px, calc(100vw - 40px))",
+            width: "max-content",
+            background: t.card,
+            border: `1px solid ${t.border}`,
+            borderRadius: 12,
+            boxShadow: t.shadowLg,
+            overflow: "hidden",
+            maxHeight: variant === "hero" ? "60vh" : "70vh",
+            overflowY: "auto",
+            zIndex: 999,
+            animation: "rdFadeSlide 0.15s ease",
+          }}>
           <style>{`
             @keyframes rdFadeSlide {
               from { opacity:0; transform:translateY(${dropUp ? "6px" : "-6px"}); }
@@ -176,7 +188,8 @@ export default function ResumeDropdown({ darkMode, variant = "hero" }) {
               </div>
             </a>
           ))}
-        </div>
+          </div>
+        </>
       )}
     </div>
   );
