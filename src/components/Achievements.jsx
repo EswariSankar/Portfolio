@@ -41,8 +41,8 @@ export default function Achievements({ darkMode, registerSection, visible, fadeI
                 background: t.accent, flexShrink: 0,
               }} />
               <div style={{ flex: 1, minWidth: 0 }}>
-                <span style={{ fontSize: 17, fontWeight: 600, color: t.text }}>{l.role}</span>
-                <span style={{ fontSize: 14, color: t.textSecondary, marginLeft: 8 }}>{l.org}</span>
+                <span style={{ fontSize: 20, fontWeight: 600, color: t.text }}>{l.role}</span>
+                <span style={{ fontSize: 18, color: t.textSecondary, marginLeft: 8 }}>{l.org}</span>
               </div>
               <div style={{
                 fontSize: 14, color: t.accentText, background: t.accentLight,

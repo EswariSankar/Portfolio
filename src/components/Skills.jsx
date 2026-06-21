@@ -140,8 +140,8 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
                 }}>
                   {s.icon}
                 </div>
-                <div style={{ fontSize: 15, fontWeight: 600, color: t.text, marginBottom: 6 }}>{s.title}</div>
-                <div style={{ fontSize: 13, color: t.textSecondary, lineHeight: 1.6 }}>{s.tags}</div>
+                <div style={{ fontSize: 20, fontWeight: 600, color: t.text, marginBottom: 6 }}>{s.title}</div>
+                <div style={{ fontSize: 18, color: t.textSecondary, lineHeight: 1.6 }}>{s.tags}</div>
               </div>
             ))}
           </div>

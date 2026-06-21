@@ -32,16 +32,16 @@ export default function Footer({ darkMode }) {
           <div style={{ fontFamily: "'Times New Roman',", fontSize: 20, color: '#000000' }}>
             Eswari&nbsp;&nbsp;S
           </div>
-          <div style={{ fontSize: 14, color: t.muted }}>
+          <div style={{ fontSize: 18, color: t.muted }}>
             © 2026 Eswari S · B.E. IT, Annamalai University
           </div>
           <div style={{ display: "flex", gap: 16 }}>
             <a href={GITHUB} target="_blank" rel="noreferrer"
-              style={{ fontSize: 15, color: t.accent, textDecoration: "none" }}>
+              style={{ fontSize: 18, color: t.accent, textDecoration: "none" }}>
               GitHub
             </a>
             <a href={LINKEDIN} target="_blank" rel="noreferrer"
-              style={{ fontSize: 15, color: "#0A66C2", textDecoration: "none" }}>
+              style={{ fontSize: 18, color: "#0A66C2", textDecoration: "none" }}>
               LinkedIn
             </a>
           </div>

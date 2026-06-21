@@ -110,8 +110,8 @@ export default function Certifications({ darkMode, registerSection, visible, fad
                   {c.icon}
                 </div>
                 <div>
-                  <div style={{ fontSize: 16, fontWeight: 600, color: t.text, marginBottom: 4, lineHeight: 1.4 }}>{c.title}</div>
-                  <div style={{ fontSize: 14, color: t.textSecondary }}>{c.org}</div>
+                  <div style={{ fontSize: 20, fontWeight: 600, color: t.text, marginBottom: 4, lineHeight: 1.4 }}>{c.title}</div>
+                  <div style={{ fontSize: 18, color: t.textSecondary }}>{c.org}</div>
                 </div>
               </div>
             ))}

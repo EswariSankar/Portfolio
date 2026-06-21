@@ -81,7 +81,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                 gap: 8,
                 background: t.accentLight,
                 color: t.accentText,
-                fontSize: 18,
+                fontSize: 20,
                 padding: "8px 20px",
                 borderRadius: 20,
                 marginBottom: 24,
@@ -107,7 +107,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
             </h1>
 
             <p style={{
-              fontSize: 18,
+              fontSize: 20,
               color: t.textSecondary,
               lineHeight: 1.75,
               marginBottom: 32,

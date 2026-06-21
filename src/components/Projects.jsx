@@ -58,14 +58,14 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                   </div>
                 )}
                 <h3 style={{
-                  fontSize: 18, lineHeight: 1.3, marginBottom: 10,
+                  fontSize: 22, lineHeight: 1.3, marginBottom: 10,
                   color: t.text, fontFamily: "'Times New Roman',",
                   marginTop: p.highlight ? 28 : 0,
                 }}>
                   {p.title}
                 </h3>
                 <p style={{
-                  fontSize: 15, color: t.textSecondary, lineHeight: 1.7,
+                  fontSize: 18, color: t.textSecondary, lineHeight: 1.7,
                   flex: 1, textAlign: "justify", margin: 0,
                 }}>
                   {p.desc}
@@ -73,7 +73,7 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6, margin: "14px 0 10px" }}>
                   {p.tags.map((tag) => (
                     <span key={tag} style={{
-                      fontSize: 13, padding: "3px 10px", borderRadius: 20,
+                      fontSize: 16, padding: "3px 10px", borderRadius: 20,
                       background: t.accentLight, color: t.accentText,
                     }}>
                       {tag}
@@ -86,7 +86,7 @@ export default function Projects({ darkMode, registerSection, visible, fadeIn })
                     target="_blank"
                     rel="noreferrer"
                     style={{
-                      fontSize: 15, color: t.accent, textDecoration: "none",
+                      fontSize: 18, color: t.accent, textDecoration: "none",
                       fontWeight: 500, display: "flex", alignItems: "center", gap: 4,
                     }}
                   >

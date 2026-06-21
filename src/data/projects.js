@@ -12,5 +12,12 @@ export const projects = [
     tags: ["Python", "Image Processing", "OpenCV"],
     highlight: false,
   },
+  {
+    title: "Car Rental DApp",
+    desc: "A decentralized car rental platform built on Ethereum where users can add vehicles, rent, and return vehicles via smart contracts. Integrates MetaMask for wallet authentication and Web3.js for blockchain interaction, with all rental logic enforced on-chain.",
+    tags: ["Solidity", "Hardhat", "React.js", "Web3.js", "MetaMask", "Ethereum"],
+    link: "https://github.com/EswariSankar/Car-Rental-Dapp",
+    highlight: false,
+  },
   
 ];

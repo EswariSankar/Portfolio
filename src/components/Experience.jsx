@@ -72,15 +72,15 @@ export default function Experience({ darkMode, registerSection, visible, fadeIn 
                 {e.icon}
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: 18, fontWeight: 600, color: t.text, marginBottom: 4 }}>{e.title}</div>
+                <div style={{ fontSize: 20, fontWeight: 600, color: t.text, marginBottom: 4 }}>{e.title}</div>
                 <div style={{
-                  fontSize: 14, color: t.accentText, background: t.accentLight,
+                  fontSize: 18, color: t.accentText, background: t.accentLight,
                   display: "inline-block", padding: "2px 10px", borderRadius: 20,
                   marginBottom: 10, fontWeight: 500,
                 }}>
                   {e.org}
                 </div>
-                <p style={{ fontSize: 15, color: t.textSecondary, lineHeight: 1.75, margin: 0, textAlign: "justify" }}>
+                <p style={{ fontSize: 18, color: t.textSecondary, lineHeight: 1.75, margin: 0, textAlign: "justify" }}>
                   {e.desc}
                 </p>
               </div>
