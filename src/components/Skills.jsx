@@ -57,7 +57,7 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
         </svg>
       ),
       title: "AI & Vision",
-      tags: "MediaPipe, OpenCV, Image Processing",
+      tags: "MediaPipe, OpenCV, SVM, Scikit-Learn, Image Processing",
     },
     {
       icon: (
@@ -86,7 +86,7 @@ export default function Skills({ darkMode, registerSection, visible, fadeIn }) {
         </svg>
       ),
       title: "Blockchain",
-      tags: "Smart Contracts, Web3 basics",
+      tags: "Smart Contracts, Meta mask, Web3 basics",
     },
   ];
 

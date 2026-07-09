@@ -214,7 +214,7 @@ export default function Hero({ darkMode, registerSection, fadeIn }) {
                   <div style={{ textAlign: "center" }}>
                     <div style={{ fontFamily: "'Times New Roman',", fontSize: 22, color: t.text }}>Eswari S</div>
                     <div style={{ fontSize: 15, color: t.textSecondary, marginTop: 4 }}>B.E. Information Technology</div>
-                    <div style={{ fontSize: 15, color: t.accentText, marginTop: 4 }}>Annamalai University · 9.4 CGPA</div>
+                    <div style={{ fontSize: 15, color: t.accentText, marginTop: 4 }}>Annamalai University · 9.3 CGPA</div>
                   </div>
                 </div>
               </div>

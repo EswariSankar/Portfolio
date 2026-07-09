@@ -7,16 +7,24 @@ export const projects = [
     highlight: false,
   },
   {
-    title: "Pothole Detection System",
-    desc: "Detects road potholes using image processing and Python to reduce accidents and enhance road safety.",
-    tags: ["Python", "Image Processing", "OpenCV"],
-    highlight: false,
-  },
-  {
     title: "Car Rental DApp",
     desc: "A decentralized car rental platform built on Ethereum where users can add vehicles, rent, and return vehicles via smart contracts. Integrates MetaMask for wallet authentication and Web3.js for blockchain interaction, with all rental logic enforced on-chain.",
     tags: ["Solidity", "Hardhat", "React.js", "Web3.js", "MetaMask", "Ethereum"],
     link: "https://github.com/EswariSankar/Car-Rental-Dapp",
+    highlight: false,
+  },
+  {
+    title: "Pothole Detection System",
+    desc: "Pothole detection system that analyzes road images using HOG and SVM machine learning to identify road damage and improve transportation safety.",
+    tags: ["Python", "Image Processing", "OpenCV", "Numpy", "Scikit-Learn", "Tkinter"],
+    link: "https://github.com/EswariSankar/Pothole-Detection-System",
+    highlight: false,
+  },
+  {
+    title: "Virtual Mouse Using Hand Gestures",
+    desc: "A touchless mouse control system that lets you operate your computer entirely through hand gestures — no external hardware required.",
+    tags: ["Python", "MediaPipe", "OpenCV", "PyAutoGUI"],
+    link: "https://github.com/EswariSankar/Virtual-Mouse-Using-Hand-Gestures",
     highlight: false,
   },
   
